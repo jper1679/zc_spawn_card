@@ -193,7 +193,7 @@
                         </div>
                         
                         <div class="panel-body">
-                            <textarea id="input_card_name" rows="1" class="form-control"></textarea>
+                            <textarea id="input_card_name" rows="2" class="form-control"></textarea>
                         </div>
                     </div>
                     
@@ -276,6 +276,7 @@
                             <div id="calque_parchemin_top" class="calque calque_parchemin_top calque_bleeding"></div>
                             <div id="calque_barre" class="calque calque_barre calque_bleeding"></div>
                             <div id="output_card_header">
+                            <div id="output_card_header_number">
                             
                             <div id="output_blue" class="card_text"></div>
                             <div id="output_yellow" class="card_text"></div>
@@ -301,10 +302,6 @@
                                             <div id="output_card_sub_name"></div>
                                         </td>
                                     </tr>
-<!--                                </table>
-                            </div>
-                            <div id="calque_description" class="calque calque_description">
-                                <table>-->
                                     <tr>
                                         <td id="output_description_container">
                                             <div id="output_description"></div>
@@ -326,6 +323,7 @@
                             <div id="calque_slot" class="calque calque_bleeding calque_slot optional"></div>
 
                                 <p id="output_card_name" ></p>
+                                <p id="output_card_number" ></p>
                                 <!-- <p id="output_card_sub_name" ></p>-->
                             </div>
                             <div id="calque_card_border_preview" class="calque calque_bleeding"></div>
@@ -334,49 +332,24 @@
                 </div>
                 
                 <div class="col-md-3">
-                    
-                    
-                    
-                    <!-- Arme ultrarouge -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">Niveau</div>
-                        <div class="panel-body">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" id="input_ultrablue" name="input_card_level" value="blue" checked="checked"/> Arme bleu
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" id="input_ultrayellow" name="input_card_level" value="yellow"/> Arme jaune
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" id="input_ultraorange" name="input_card_level" value="orange"/> Arme orange
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" id="input_ultrarouge" name="input_card_level" value="red"/> Arme ultrarouge
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <!-- Rouge -->
                     <div class="panel panel-default">
                         <div class="panel-heading">Rouge</div>
                         <div class="panel-body">
                             <div class="radio">
-                                <label>
-                                    <select id="input_break_in_dices" name="input_break_in_dices">
-                                        <option value="door6">Abomination</option>
-                                        <option value="door5">Fatty</option>
-                                        <option value="door4">Runner</option>
-                                        <option value="door3">Walker</option>
+                                <div class="col-md-6">
+                                    <select id="input_red_type" name="input_break_in_dices">
+                                        <option value="walker">Walker</option>
+                                        <option value="fatty">Fatty</option>
+                                        <option value="runner">Runner</option>
+                                        <option value="abomination">Abomination</option>
+                                        <option value="wolfz">Wolfz</option>
+                                        <option value="crawler">Crawler</option>
                                     </select>
-                                </label>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea id="input_card_number" rows="1" class="form-control"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -385,9 +358,19 @@
                         <div class="panel-heading">Orange</div>
                         <div class="panel-body">
                             <div class="radio">
-                                <label>
-                                    <input id="input_slot_none" type="radio" name="input_slot"  value="none" checked="checked"/>Ne pas afficher
-                                </label>
+                                <div class="col-md-6">
+                                    <select id="input_orange_type" name="input_break_in_dices">
+                                        <option value="walker">Walker</option>
+                                        <option value="fatty">Fatty</option>
+                                        <option value="runner">Runner</option>
+                                        <option value="abomination">Abomination</option>
+                                        <option value="wolfz">Wolfz</option>
+                                        <option value="crawler">Crawler</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea id="input_card_number" rows="1" class="form-control"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -396,9 +379,19 @@
                         <div class="panel-heading">Jaune</div>
                         <div class="panel-body">
                             <div class="radio">
-                                <label>
-                                    <input id="input_slot_none" type="radio" name="input_slot"  value="none" checked="checked"/>Ne pas afficher
-                                </label>
+                                <div class="col-md-6">
+                                    <select id="input_yellow_type" name="input_break_in_dices">
+                                        <option value="walker">Walker</option>
+                                        <option value="fatty">Fatty</option>
+                                        <option value="runner">Runner</option>
+                                        <option value="abomination">Abomination</option>
+                                        <option value="wolfz">Wolfz</option>
+                                        <option value="crawler">Crawler</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <textarea id="input_card_number" rows="1" class="form-control"></textarea>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -408,7 +401,19 @@
                         <div class="panel-body">
                             <div class="radio">
                                 <label>
-                                    <input id="input_slot_none" type="radio" name="input_slot"  value="none" checked="checked"/>Ne pas afficher
+                                    <div class="col-md-6">
+                                        <select id="input_blue_type" name="input_break_in_dices">
+                                            <option value="walker">Walker</option>
+                                            <option value="fatty">Fatty</option>
+                                            <option value="runner">Runner</option>
+                                            <option value="abomination">Abomination</option>
+                                            <option value="wolfz">Wolfz</option>
+                                            <option value="crawler">Crawler</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <textarea id="input_card_number" rows="1" class="form-control"></textarea>
+                                    </div>
                                 </label>
                             </div>
                         </div>

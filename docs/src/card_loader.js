@@ -48,6 +48,8 @@ function load_stats(){
 
 function load_headers(){
     $("#input_card_name").val(get_locale_string("card_name"));
+    $("#input_card_number").val(get_locale_string("card_number"));
+    
     output_headers();
 }
 

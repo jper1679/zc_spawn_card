@@ -255,91 +255,6 @@ textarea {
     position:absolute;
 }
 
-.calque_slot {
-    top:0px;
-    background-position: inherit;
-    background-repeat: no-repeat;
-}
-
-.calque_slot_armor {
-    background-image: url("img/bp/slot_armor.png");
-}
-
-.calque_slot_hand {
-    background-image: url("img/bp/slot_hand.png");
-}
-
-.calque_slot_bag {
-    background-image: url("img/bp/slot_bag.png");
-}
-
-.calque_slot_bleeding_3{
-    width: 568px;
-    height: 305px;
-}
-
-.calque_slot_bleeding_0{
-    width: 488px;
-    height: 225px;
-}
-
-.calque_slot_bleeding_1, .calque_slot_bleeding_2 {
-    width: 598px;
-    height: 290px;
-}
-
-.calque_door {
-    background-image: url("img/bp/door.png");
-    top:380px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.calque_door_bleeding_3{
-    width: 568px;
-    height: 305px;
-    margin-top: -80px;
-    margin-left:-40px;
-}
-
-.calque_door_bleeding_0{
-    width: 488px;
-    height: 175px;
-}
-
-.calque_door_bleeding_1, .calque_door_bleeding_2 {
-    width: 598px;
-    height: 290px;
-    margin-top: -65px;
-    margin-left: -55px;
-}
-
-.calque_dice {
-    background-image: url("img/bp/dice_4.png");
-    top:380px;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.calque_dice_bleeding_3{
-    width: 568px;
-    height: 305px;
-    margin-top: -80px;
-    margin-left:-40px;
-}
-
-.calque_dice_bleeding_0{
-    width: 488px;
-    height: 175px;
-}
-
-.calque_dice_bleeding_1, .calque_dice_bleeding_2 {
-    width: 598px;
-    height: 290px;
-    margin-top: -65px;
-    margin-left: -55px;
-}
-
 .calque_kill_noise{
     top:525;
     background-position: bottom;
@@ -393,72 +308,6 @@ textarea {
 .calque_dual_bleeding_3 {
     width: 568px;
     height: 305px;
-}
-
-.calque_ultrarouge {
-    background-image:url("img/bp/weapon_red.png");
-    top:0px;
-    background-position: inherit;
-    background-repeat: no-repeat;
-}
-
-.calque_ultraorange {
-    background-image:url("img/bp/weapon_orange.png");
-    top:0px;
-    background-position: inherit;
-    background-repeat: no-repeat;
-}
-
-.calque_ultrayellow {
-    background-image:url("img/bp/weapon_yellow.png");
-    top:0px;
-    background-position: inherit;
-    background-repeat: no-repeat;
-}
-
-.calque_ultrarouge_bleeding_0 {
-    width: 488px;
-    height: 225px;
-}
-
-.calque_ultraorange_bleeding_0 {
-    width: 488px;
-    height: 225px;
-}
-
-.calque_ultrayellow_bleeding_0 {
-    width: 488px;
-    height: 225px;
-}
-
-.calque_ultrarouge_bleeding_1, .calque_ultrarouge_bleeding_2 {
-    width: 598px;
-    height: 290px;
-}
-
-.calque_ultraorange_bleeding_1, .calque_ultraorange_bleeding_2 {
-    width: 598px;
-    height: 290px;
-}
-
-.calque_ultrayellow_bleeding_1, .calque_ultrayellow_bleeding_2 {
-    width: 598px;
-    height: 290px;
-}
-
-.calque_ultrarouge_bleeding_3 {
-    width: 568px;
-    height: 305px;
-}
-
-.calque_ultraorange_bleeding_3 {
-	width: 568px;
-	height: 305px;
-}
-
-.calque_ultrayellow_bleeding_3 {
-	width: 568px;
-	height: 305px;
 }
 
 .calque_parchemin {
@@ -624,6 +473,26 @@ textarea {
     letter-spacing: -3px;
 }
 
+#output_card_header_number {
+    position:absolute;
+    width: 488px;
+    top:95px;
+    text-align:center;
+}
+
+#output_card_header_number p{
+    margin: 10;
+}
+#output_card_number {
+    font-family: Arek Bold Italic;
+    /* 89px -> 65pt */
+    font-size: 24pt;
+    color:#000000;
+    line-height: 0.8em;
+    text-align: center;
+    letter-spacing: -3px;
+}
+
 #output_card_sub_name {
     font-family: Arek Bold Italic;
     font-size: 20pt;
@@ -633,8 +502,6 @@ textarea {
     text-align: center;
 /*    border: 1px solid black;*/
 }
-
-
 
 #output_card_sub_name_container {
     width:488px;
@@ -699,27 +566,27 @@ textarea {
 
 @font-face {
     font-family: Algo FY;
-    src: url("fonts/bp/Algo_FY_Regular.ttf");
+    src: url("fonts/Algo_FY_Regular.ttf");
 }
 
 @font-face {
     font-family: Arek Bold Italic;
-    src: url("fonts/bp/Arek Bold Italic.otf") format("opentype");
+    src: url("fonts/Arek Bold Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: Arek Semibold Italic;
-    src: url("fonts/bp/Arek Semibold Italic.otf") format("opentype");
+    src: url("fonts/Arek Semibold Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: Arek Italic;
-    src: url("fonts/bp/Arek Italic.otf") format("opentype");
+    src: url("fonts/Arek Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: ZBP Stats;
-    src: url("fonts/bp/ZBP_STATS.TTF");
+    src: url("fonts/ZBP_STATS.TTF");
 }
 
 #input_dual_container tr {

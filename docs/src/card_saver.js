@@ -45,6 +45,7 @@ function save_stats() {
 
 function save_headers() {
     set_locale_string("card_name",$("#input_card_name").val());
+    set_locale_string("card_number",$("#input_card_number").val());
 	
     display_unsaved_data_alert();
 	
@@ -181,13 +182,15 @@ function end_drag_card_image(){
 }
 
 $(document).ready(function() {
+    $("#input_card_name").keyup(save_headers);
+    $("#input_card_number").keyup(save_headers);
+    $("input[name='input_card_type']").click(save_card_type);
+    
     $("#card_file").change(handle_change_card_image);
     $("#griffe_file").change(handle_change_griffe_image);
     
     $(".input_card_stats").keyup(save_stats);
-    $("#input_card_name").keyup(save_headers);
-    
-    $("#input_card_sub_name").keyup(save_description);
+   
     $("#input_description").keyup(save_description);
     
     $("#input_card_sub_name_size").change(save_description);
@@ -198,7 +201,7 @@ $(document).ready(function() {
     $("#input_dual").click(save_dual);
     $("input[name='input_slot']").click(save_slot);
     
-    $("input[name='input_card_type']").click(save_card_type);
+    
     
     $("input[name='input_kill_noise']").click(save_kill_noise);
     
